@@ -5,6 +5,9 @@ import store from "./store";
 
 Vue.config.productionTip = false;
 
+// 引入高德地图
+import "./plugins/aMap.js";
+
 new Vue({
   router,
   store,
