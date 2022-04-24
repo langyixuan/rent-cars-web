@@ -20,5 +20,5 @@ VueAMap.initAMapApiLoader({
   ],
   // 高德 sdk 版本，默认为 1.4.4
   v: "1.4.4",
-  uiVersion: "1.0.11", // ui版本号，也是需要写
+  uiVersion: "1.0.14", // ui版本号，也是需要写
 });
