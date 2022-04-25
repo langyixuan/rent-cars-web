@@ -1,14 +1,24 @@
 <template>
   <div class="car-swiper">
-    <swiper :pagination="{ clickable: true }" :options="swiperOption">
+    <swiper
+      :pagination="{ clickable: true }"
+      :options="swiperOption"
+      class="swiper-wrap"
+    >
       <swiper-slide><CarSwiperItem /></swiper-slide>
       <swiper-slide><CarSwiperItem /></swiper-slide>
       <swiper-slide><CarSwiperItem /></swiper-slide>
       <swiper-slide><CarSwiperItem /></swiper-slide>
       <swiper-slide><CarSwiperItem /></swiper-slide>
       <swiper-slide><CarSwiperItem /></swiper-slide>
-      <div class="swiper-button-prev" slot="button-prev"></div>
-      <div class="swiper-button-next" slot="button-next"></div>
+      <div
+        class="swiper-button-prev iconfont icon-jiantou_xiangzuo_o"
+        slot="button-prev"
+      ></div>
+      <div
+        class="swiper-button-next iconfont icon-jiantou_xiangyou_o"
+        slot="button-next"
+      ></div>
     </swiper>
   </div>
 </template>
@@ -24,7 +34,7 @@ export default {
     return {
       swiperOption: {
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 40,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -42,5 +52,23 @@ export default {
 }
 .swiper-button-next:after {
   display: none;
+}
+
+.swiper-wrap {
+  padding: 100px;
+}
+
+.swiper-button-next {
+}
+
+.iconfont {
+  color: rgb(45, 35, 35);
+  font-size: 34px;
+  font-weight: 700;
+  transition: all ease-in-out 0.4s;
+
+  &:hover {
+    color: orangered;
+  }
 }
 </style>

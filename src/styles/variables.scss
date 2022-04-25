@@ -1,0 +1,14 @@
+// 全局颜色变量
+$dark-orange: #FC411C;
+$light-orange: #FE8F00;
+
+// 侧边栏公共样式
+@mixin navbar {
+  width: 20vw;
+  height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: rgb(19, 19, 19);
+  // background: linear-gradient(-30deg,rgb(39, 39, 39),rgb(39, 39, 39),rgb(39, 39, 39),rgb(39, 39, 39), $light-orange);
+}
+

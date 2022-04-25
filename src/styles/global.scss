@@ -1,5 +1,14 @@
 @import './normalize.scss';
+@import './variables.scss';
+@import './elementUI.scss';
+
+
 
 body {
   background-color: #F6F6F6;
+  font-family:  Prompt, Barlow, -apple-system, BlinkMacSystemFont, Helvetica Neue,
+    PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC,
+    WenQuanYi Micro Hei, sans-serif;
 }
+
+

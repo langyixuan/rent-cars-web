@@ -1,6 +1,8 @@
 <template>
   <div class="home-container">
-    <UserNav />
+    <div class="user-nav">
+      <router-view></router-view>
+    </div>
     <Main />
     <Amap />
   </div>
@@ -8,11 +10,10 @@
 
 <script>
 import Amap from "../amap";
-import UserNav from "../userNav";
 import Main from "../main";
 export default {
   name: "Home",
-  components: { Amap, UserNav, Main },
+  components: { Amap, Main },
 };
 </script>
 
